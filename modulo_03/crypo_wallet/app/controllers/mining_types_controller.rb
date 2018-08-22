@@ -69,6 +69,6 @@ class MiningTypesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def mining_type_params
-      params.require(:mining_type).permit(:name, :acronym)
+      params.require(:mining_type).permit(:description, :acronym)
     end
 end
