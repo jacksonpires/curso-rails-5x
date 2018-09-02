@@ -29,7 +29,7 @@
   
   <div class="field">
     <%= form.label :mining_type_id %>
-    <%= form.select("mining_type_id", MiningType.all.collect { |m| [ m.description, m.id ] }, { include_blank: 'Selecione...' }) %>
+    <%= form.select("mining_type_id", @mining_type_options, { include_blank: 'Selecione...' }) %>
   </div>
 
   <div class="actions">
