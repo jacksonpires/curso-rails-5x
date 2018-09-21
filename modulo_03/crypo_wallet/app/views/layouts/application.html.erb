@@ -6,11 +6,15 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'scaffolds', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    params[:controller], media: 'all', 'data-turbolinks-track': 'reload' %>
+   
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag params[:controller], 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <h1>CABEÇALHO</h1>
+    <h1>CABEÇALHO - <%= params[:controller] %></h1>
     <%= yield %> <%# index.html.erb, edit.html.erb %>
     <h1>RODAPÉ</h1>
   </body>
