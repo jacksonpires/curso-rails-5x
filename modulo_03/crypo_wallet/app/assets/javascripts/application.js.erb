@@ -13,3 +13,6 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
+
+<% msg = Time.now < 12 ? "Bom dia!" : "Olá!!!" %>
+alert("<%= Time.now %>");
