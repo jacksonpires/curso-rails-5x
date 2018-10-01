@@ -1,5 +1,11 @@
 {
   "name": "crypo_wallet",
-  "private": true,
-  "dependencies": {}
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jackson Pires <jackson.pires@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "notify-js-legacy": "^0.4.1"
+  }
 }
