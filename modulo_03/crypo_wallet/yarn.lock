@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+bootstrap@^4.1.3:
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.1.3.tgz#0eb371af2c8448e8c210411d0cb824a6409a12be"
+  integrity sha512-rDFIzgXcof0jDyjNosjv4Sno77X4KuPeFxG2XZZv1/Kc8DRVGVADdoQyyOVDwPqL36DDmtCQbrpMCqvpPLJQ0w==
+
 jquery@^3.3.1:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
@@ -11,3 +16,8 @@ notify-js-legacy@^0.4.1:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/notify-js-legacy/-/notify-js-legacy-0.4.1.tgz#d8cd3a03a16de5018b469ed578f9cd0a5d98afa7"
   integrity sha1-2M06A6Ft5QGLRp7VePnNCl2Yr6c=
+
+popper.js@^1.14.4:
+  version "1.14.4"
+  resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.14.4.tgz#8eec1d8ff02a5a3a152dd43414a15c7b79fd69b6"
+  integrity sha1-juwdj/AqWjoVLdQ0FKFce3n9abY=
