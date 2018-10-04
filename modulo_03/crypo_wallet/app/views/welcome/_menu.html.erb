@@ -1,2 +1,2 @@
-<%= link_to "Moedas", coins_path, class:"btn btn-primary btn-lg", role:"button" %>
-<%= link_to "Tipos de Mineração", mining_types_path, class:"btn btn-primary btn-lg", role:"button" %>
+<%= link_to "#{Coin.model_name.human}", coins_path, class:"btn btn-primary btn-lg", role:"button" %>
+<%= link_to "#{MiningType.model_name.human}", mining_types_path, class:"btn btn-primary btn-lg", role:"button" %>
