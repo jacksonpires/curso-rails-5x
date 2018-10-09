@@ -1,6 +1,6 @@
-<h1>Editing Mining Type</h1>
+<h1><%= t('editing.mining_type') %></h1>
 
 <%= render 'form', mining_type: @mining_type %>
 
-<%= link_to 'Show', @mining_type %> |
-<%= link_to 'Back', mining_types_path %>
+<%= link_to t('links.show'), @mining_type, class:"btn btn-primary" %> |
+<%= link_to t('links.back'), mining_types_path, class:"btn btn-primary" %>
