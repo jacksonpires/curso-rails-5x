@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <h1>LAYOUT APPLICATION</h1>
+    <h1>LAYOUT PROFILES BACKOFFICE</h1>
     <%= yield %>
   </body>
 </html>
