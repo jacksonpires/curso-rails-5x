@@ -1,0 +1,2 @@
+module Site::WelcomeHelper
+end
