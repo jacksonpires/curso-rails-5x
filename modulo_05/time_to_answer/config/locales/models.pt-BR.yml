@@ -4,16 +4,16 @@
       admin:
         one: Administrador
         other: Administradores
-      profile:
-        one: Perfil
-        other: Perfis  
+      user:
+        one: Usuário
+        other: Usuários  
     attributes:
       admin:
         id: Código
         email: Email
         created_at: Criado em
         updated_at: Atualizado em
-      profile:
+      user:
         id: Código
         email: Email
         created_at: Criado em
