@@ -7,17 +7,39 @@ bootstrap@3.3.7:
   resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-3.3.7.tgz#5a389394549f23330875a3b150656574f8a9eb71"
   integrity sha1-WjiTlFSfIzMIdaOxUGVldPip63E=
 
+fastclick@1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/fastclick/-/fastclick-1.0.6.tgz#161625b27b1a5806405936bda9a2c1926d06be6a"
+  integrity sha1-FhYlsnsaWAZAWTa9qaLBkm0Gvmo=
+
 font-awesome@4.6.3:
   version "4.6.3"
   resolved "https://registry.yarnpkg.com/font-awesome/-/font-awesome-4.6.3.tgz#86933651540ee00874c664017f50f2172f6531a2"
   integrity sha1-hpM2UVQO4Ah0xmQBf1DyFy9lMaI=
+
+jquery-mousewheel@>=3.0.6:
+  version "3.1.13"
+  resolved "https://registry.yarnpkg.com/jquery-mousewheel/-/jquery-mousewheel-3.1.13.tgz#06f0335f16e353a695e7206bf50503cb523a6ee5"
+  integrity sha1-BvAzXxbjU6aV5yBr9QUDy1I6buU=
 
 jquery@3.3.1:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
   integrity sha512-Ubldcmxp5np52/ENotGxlLe6aGMvmF4R8S6tZjsP6Knsaxd/xp3Zrh50cG93lR6nPXyUFwzN3ZSOQI0wRJNdGg==
 
+malihu-custom-scrollbar-plugin@3.1.3:
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/malihu-custom-scrollbar-plugin/-/malihu-custom-scrollbar-plugin-3.1.3.tgz#2ec26d51df223c251e586fc6662702953bf026f1"
+  integrity sha1-LsJtUd8iPCUeWG/GZicClTvwJvE=
+  dependencies:
+    jquery-mousewheel ">=3.0.6"
+
 metismenu@3.0.3:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/metismenu/-/metismenu-3.0.3.tgz#961e4c9469144d5078f6228b6e049e58f3137140"
   integrity sha512-nd3+yxSivGG0a5JZJxzlbXQv9aovf1yLjIYfa/s49PrvgTLlJsoe90kw9RbA6RPbPatJxENX0CegX4Hlbfaw8w==
+
+nprogress@0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/nprogress/-/nprogress-0.2.0.tgz#cb8f34c53213d895723fcbab907e9422adbcafb1"
+  integrity sha1-y480xTIT2JVyP8urkH6UIq28r7E=
