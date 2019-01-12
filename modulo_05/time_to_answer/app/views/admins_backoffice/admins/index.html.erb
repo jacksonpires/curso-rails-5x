@@ -1,2 +1,28 @@
-<h1>Admins</h1>
-
+<h1>Listando Administradores</h1>
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-hover">
+      <thead>
+          <tr>
+              <th>#</th>
+              <th>Email</th>
+              <th></th>
+          </tr>
+      </thead>
+      <tbody>
+          <% @admins.each do |admin| %>
+          <tr>
+              <td><%= admin.id %></td>
+              <td><%= admin.email %></td>
+              <td style="width: 100px">
+                <button type="button" class="btn btn-primary btn-circle">
+                  <i class="fa fa-edit"></i>
+                </button>
+                <button type="button" class="btn btn-danger btn-circle">
+                  <i class="fa fa-minus"></i>
+                </button>
+              </td>
+          </tr>
+          <% end %>
+      </tbody>
+  </table>
+</div>
