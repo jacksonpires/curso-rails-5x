@@ -14,25 +14,25 @@
             <div class="panel-body">
                 <div class="row">
                     <div class="col-lg-6">
-                        <form role="form">
+                       <%= form_with(model: [ :admins_backoffice, @admin ], local: true) do |form| %>
                         
                             <div class="form-group">
-                                <label>Email</label>
-                                <input class="form-control" placeholder="Enter text">
+                                <%= form.label :email %>
+                                <%= form.text_field :email, class:"form-control", placeholder:"Email do administrador"  %>
                             </div>
                             
                             <div class="form-group">
-                                <label>Senha</label>
-                                <input class="form-control" placeholder="Enter text">
+                                <%= form.label :password %>
+                                <%= form.text_field :password, class:"form-control", placeholder:"Email do administrador"  %>
                             </div>
 
                             <div class="form-group">
-                                <label>Confirmação da Senha</label>
-                                <input class="form-control" placeholder="Enter text">
+                                <%= form.label :password_confirmation %>
+                                <%= form.text_field :password_confirmation, class:"form-control", placeholder:"Email do administrador"  %>
                             </div>
 
-                            <button type="submit" class="btn btn-default">Submit Button</button>
-                        </form>
+                            <button type="submit" class="btn btn-default">Salvar</button>
+                        <% end %>
                     </div>
                     <!-- /.col-lg-6 (nested) -->
                 </div>
