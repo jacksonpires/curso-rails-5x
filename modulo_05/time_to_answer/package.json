@@ -3,6 +3,7 @@
   "private": true,
   "dependencies": {
     "bootstrap": "3.3.7",
+    "bootstrap-growl-ifightcrime": "^1.1.0",
     "fastclick": "1.0.6",
     "font-awesome": "4.6.3",
     "jquery": "3.3.1",
