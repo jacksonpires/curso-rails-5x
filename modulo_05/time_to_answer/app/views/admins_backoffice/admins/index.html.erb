@@ -29,9 +29,9 @@
                   <i class="fa fa-edit"></i>
                 <% end %>
 
-                <button type="button" class="btn btn-danger btn-circle">
+                <%= link_to admins_backoffice_admin_path(admin), method: :delete, class:"btn btn-danger btn-circle", data: { confirm: "Deseja realmente excluir esse administrador?" }  do %>
                   <i class="fa fa-minus"></i>
-                </button>
+                <% end %>
               </td>
           </tr>
           <% end %>
