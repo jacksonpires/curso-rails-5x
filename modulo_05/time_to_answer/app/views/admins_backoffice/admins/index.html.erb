@@ -10,7 +10,7 @@
       <thead>
           <tr>
               <th>#</th>
-              <th>Email</th>
+              <th><%= translate_attribute(@admins, :email) %></th>
               <th>
                 <%= link_to new_admins_backoffice_admin_path, class:"btn btn-success btn-circle" do %>
                   <i class="fa fa-plus"></i>

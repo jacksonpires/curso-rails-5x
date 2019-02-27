@@ -6,7 +6,13 @@
         other: Administradores
       user:
         one: Usuário
-        other: Usuários  
+        other: Usuários
+      subject:
+        one: Assunto
+        other: Assuntos
+      question:
+        one: Pergunta
+        other: Perguntas
     attributes:
       admin:
         id: Código
@@ -19,4 +25,16 @@
         id: Código
         email: Email
         created_at: Criado em
-        updated_at: Atualizado ems
+        updated_at: Atualizado em
+      subject:
+        id: Código
+        description: Descrição
+        created_at: Criado em
+        updated_at: Atualizado em
+      question:
+        id: Código
+        description: Descrição
+        subject: Assunto
+        subject_id: Assunto
+        created_at: Criado em
+        updated_at: Atualizado em
