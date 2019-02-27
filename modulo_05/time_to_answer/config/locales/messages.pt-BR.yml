@@ -1,5 +1,5 @@
 'pt-BR':
-  messages:
+  message:
     editing: Editando %{model}
     new: Novo %{model}
     listing: Listando %{model}
