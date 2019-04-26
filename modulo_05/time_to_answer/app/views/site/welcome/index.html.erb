@@ -1,14 +1,14 @@
-<h1>Site::Welcome#index</h1>
-<p>Find me in app/views/site/welcome/index.html.erb</p>
-
-<% if user_signed_in? %>
-  <p>Usuário ESTÁ logado / <%= current_user.email %> </p>
-<% else %>
-  <p>Usuário NÃO está logado</p>
-<% end %>
-
-<% if admin_signed_in? %>
-  <p>Administrador ESTÁ logado / <%= current_admin.email %> </p>
-<% else %>
-  <p>Administrador NÃO está logado</p>
+<% @questions.each do |question| %>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title"><%= question.description %></h3>
+    </div>
+    <div class="panel-body">
+      <ul>
+        <% question.answers.each do |answer| %>
+          <li><%= answer.description %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
 <% end %>
