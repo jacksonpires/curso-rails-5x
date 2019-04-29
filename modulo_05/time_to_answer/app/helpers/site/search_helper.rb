@@ -1,0 +1,2 @@
+module Site::SearchHelper
+end

@@ -1,0 +1,14 @@
+<% @questions.each do |question| %>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title"><%= question.description %></h3>
+    </div>
+    <div class="panel-body">
+      <ul>
+        <% question.answers.each do |answer| %>
+          <li><%= answer.description %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+<% end %>

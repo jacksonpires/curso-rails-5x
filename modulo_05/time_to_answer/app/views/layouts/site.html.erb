@@ -38,6 +38,12 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav"></ul>
+            <%= form_with(url: site_search_path, local: true, method: :get, class:"navbar-form navbar-left") do |form| %>
+              <div class="form-group">
+                <%= form.text_field :term, class:"form-control", placeholder:"Digite algo..."%>
+              </div>
+              <button type="submit" class="btn btn-default">Pesquisar</button>
+            <% end %>
             <ul class="nav navbar-nav navbar-right">
               <% unless user_signed_in? %>
                 <li><%= link_to 'Entrar', new_user_session_path %></li>
