@@ -1,1 +1,23 @@
-alert('teste teste teste!!!!! <%= @answer.correct %>');
+var element = document.getElementById('submit_<%= @answer.question_id %>');
+
+element.classList.remove('btn-default');
+element.classList.remove('btn-success');
+element.classList.remove('btn-danger');
+
+if (<%= @answer.correct %>) {
+  element.classList.add('btn-success');
+  $.bootstrapGrowl('Você acertou! \\o/', {
+    type: 'success', // (null, 'info', 'danger', 'success')
+    align: 'right', // ('left', 'right', or 'center')
+    allow_dismiss: true, // If true then will display a cross to close the popup.
+    stackup_spacing: 10 // spacing between consecutively stacked growls.
+    });
+} else {
+  element.classList.add( 'btn-danger');
+  $.bootstrapGrowl('Você errou! :(', {
+    type: 'danger', // (null, 'info', 'danger', 'success')
+    align: 'right', // ('left', 'right', or 'center')
+    allow_dismiss: true, // If true then will display a cross to close the popup.
+    stackup_spacing: 10 // spacing between consecutively stacked growls.
+    });
+}
