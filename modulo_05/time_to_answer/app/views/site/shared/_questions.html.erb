@@ -9,7 +9,7 @@
       <div class="panel-heading">
         <h3 class="panel-title">
           <span class="label label-info" style="margin-right: 10px;">
-            <%= link_to question.subject.description, site_search_subject_path(question.subject_id, question.subject.description), style:"color: white;" %>
+            <%= link_to "#{question.subject.description} (#{question.subject.questions.count})", site_search_subject_path(question.subject_id, question.subject.description), style:"color: white;" %>
           </span>
           <%= question.description %>
         </h3>
