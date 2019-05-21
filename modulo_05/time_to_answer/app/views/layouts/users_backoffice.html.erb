@@ -202,5 +202,16 @@
 
     <%= javascript_include_tag 'application' %>
     <%= javascript_include_tag 'users_backoffice' %>
+
+    <% if notice %>
+        <%= javascript_tag do %>
+            $.bootstrapGrowl('<%= notice %>', {
+            type: 'success', // (null, 'info', 'danger', 'success')
+            align: 'right', // ('left', 'right', or 'center')
+            allow_dismiss: true, // If true then will display a cross to close the popup.
+            stackup_spacing: 10 // spacing between consecutively stacked growls.
+            });
+        <% end %>
+    <% end %>
   </body>
 </html>
