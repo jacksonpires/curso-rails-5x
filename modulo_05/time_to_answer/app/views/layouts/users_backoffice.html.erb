@@ -45,7 +45,16 @@
             <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
               <div class="menu_section">
                 <ul class="nav side-menu">                  
-                  <li><a href="javascript:void(0)"><i class="fa fa-user"></i>Dados do perfil</a></li>
+                  <li>
+                    <%= link_to users_backoffice_welcome_index_path do %>
+                      <i class="fa fa-home"></i>Início
+                    <% end %>
+                  </li>
+                  <li>
+                    <%= link_to users_backoffice_profile_path do %>
+                      <i class="fa fa-user"></i>Dados do Perfil
+                    <% end %>
+                  </li>
                 </ul>
               </div>
 
@@ -174,10 +183,7 @@
         <div class="right_col" role="main">
           <div class="">
             <div class="page-title">
-              <div class="title_left">
-                <h1>LAYOUT USERS BACKOFFICE</h1>
-                <%= yield %>
-              </div>
+              <%= yield %>
             </div>
           </div>
         </div>
