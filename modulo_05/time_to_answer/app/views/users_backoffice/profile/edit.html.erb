@@ -52,11 +52,36 @@
             </div>
 
             <div class="form-group">
-                <%= profile_form.label :gender, class:"control-label col-md-3 col-sm-3 col-xs-12" %>
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                  <%= profile_form.text_field :gender, class:"form-control col-md-7 col-xs-12"%>
+              <%= profile_form.label :gender, class:"control-label col-md-3 col-sm-3 col-xs-12" %>
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div id="gender" class="btn-group" data-toggle="buttons">
+                  <label class="btn <%= gender_select(@user, 'M') %>" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                    <%= profile_form.radio_button :gender, "M", "data-parsley-multiple":"gender"%> &nbsp; Masculino &nbsp;
+                  </label>
+                  <label class="btn <%= gender_select(@user, 'F') %>" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
+                    <%= profile_form.radio_button :gender, "F", "data-parsley-multiple":"gender"%> &nbsp; Feminino &nbsp;
+                  </label>
                 </div>
+              </div>
             </div>
+
+            <%= javascript_tag do %>
+               var labels = document.querySelectorAll('div#gender label');
+
+               labels.forEach((label) => {
+                 label.addEventListener('click', () => {
+                   label.classList.remove('btn-default');
+                   label.classList.add('btn-primary');
+
+                   labels.forEach((lbl) => {
+                     if(lbl !== label){
+                        lbl.classList.remove('btn-primary');
+                        lbl.classList.add('btn-default');
+                     };
+                   });
+                 });
+               });
+            <% end %>
 
             <div class="form-group">
                 <%= profile_form.label :birthdate, class:"control-label col-md-3 col-sm-3 col-xs-12" %>
