@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_20_223938) do
+ActiveRecord::Schema.define(version: 2019_05_23_002638) do
 
   create_table "admins", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -46,6 +46,16 @@ ActiveRecord::Schema.define(version: 2019_05_20_223938) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "questions_count"
+  end
+
+  create_table "user_profiles", force: :cascade do |t|
+    t.string "address"
+    t.string "gender"
+    t.date "birthdate"
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_user_profiles_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
