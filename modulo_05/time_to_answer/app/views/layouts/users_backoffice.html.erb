@@ -30,7 +30,7 @@
             <!-- menu profile quick info -->
             <div class="profile clearfix">
               <div class="profile_pic">
-                <%= link_to image_tag(avatar_url, alt:"...", class:"img-circle profile_img"), '#', "data-toggle":"modal", "data-target":"#avatarModal" %>
+                <%= link_to image_tag(avatar_url, alt:"...", class:"img-circle profile_img", id:"imgAvatarMd"), '#', "data-toggle":"modal", "data-target":"#avatarModal" %>
               </div>
               <div class="profile_info">
                 <span>Seja bem-vindo,</span>
@@ -91,7 +91,7 @@
               <ul class="nav navbar-nav navbar-right">
                 <li class="">
                   <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    <%= image_tag avatar_url, alt:'' %>
+                    <%= image_tag avatar_url, alt:'', id:"imgAvatarSm" %>
                     <%= current_user.email %>
                     <span class=" fa fa-angle-down"></span>
                   </a>
@@ -204,7 +204,7 @@
     <div class="modal fade" id="avatarModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog modal-sm" role="document">
         <div class="modal-content">
-        <%= form_with(url: users_backoffice_profile_path, model: current_user , local: true, class:"form-horizontal form-label-left") do |form| %>
+        <%= form_with(url: users_backoffice_profile_path, model: current_user, class:"form-horizontal form-label-left") do |form| %>
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <h4 class="modal-title" id="myModalLabel">Avatar</h4>
@@ -213,7 +213,7 @@
             <%= form.fields_for :user_profile do |profile_form|  %>
               <div class="form-group">
                 <%= profile_form.label :avatar %>
-                <%= image_tag(avatar_url, alt:"...", class:"img-circle profile_img") %>
+                <%= image_tag(avatar_url, alt:"...", class:"img-circle profile_img", id:"imgAvatarLg") %>
                 <%= profile_form.file_field :avatar %>
               </div>
             <% end %>
