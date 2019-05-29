@@ -4,6 +4,17 @@ Rails.application.configure do
   # Devise Config
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
+  # Mailtrap Config
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    :user_name => 'ebbfe7d55834b6',
+    :password => '7b0efb02b5793b',
+    :address => 'smtp.mailtrap.io',
+    :domain => 'smtp.mailtrap.io',
+    :port => '2525',
+    :authentication => :cram_md5
+  }
+
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
