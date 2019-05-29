@@ -1,16 +1,26 @@
-<h2>Forgot your password?</h2>
 
-<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-  <%= devise_error_messages! %>
+<div>
+  <a class="hiddenanchor" id="signin"></a>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  <div class="login_wrapper">
+    <div class="animate form login_form">
+      <section class="login_content">
+        <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+          <h1>Esqueceu a senha?</h1>
+          <div>
+            <%= f.email_field :email, autofocus: true, placeholder:"Email", class:"form-control" %>
+          </div>
+
+          <div>
+            <%= f.submit "Enviar instruções para o meu email", class:"btn btn-default submit", style:"float: none; margin-left: 0px; " %>
+          </div>
+
+          <div class="clearfix"></div>
+
+          <div class="separator"></div>
+        <% end %>
+      </section>
+    </div>
   </div>
+</div>
 
-  <div class="actions">
-    <%= f.submit "Send me reset password instructions" %>
-  </div>
-<% end %>
-
-<%= render "users/shared/links" %>
