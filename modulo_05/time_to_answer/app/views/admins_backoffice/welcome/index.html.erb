@@ -1,4 +1,39 @@
-<h1>AdminsBackoffice::Welcome#index</h1>
-<p>Find me in app/views/admins_backoffice/welcome/index.html.erb</p>
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">Seja bem-vindo!</h1>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
 
-<p> <%= link_to 'Fazer logoff [Administrador]', destroy_admin_session_path, method: :delete %> </p>
+<div class="row">
+  <div class="col-lg-3 col-md-6">
+      <div class="panel panel-primary">
+          <div class="panel-heading">
+              <div class="row">
+                  <div class="col-xs-3">
+                      <i class="fa fa-comments fa-5x"></i>
+                  </div>
+                  <div class="col-xs-9 text-right">
+                      <div class="huge"><%= @total_users %></div>
+                      <div>Total de usuários do sistema!</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="col-lg-3 col-md-6">
+      <div class="panel panel-green">
+          <div class="panel-heading">
+              <div class="row">
+                  <div class="col-xs-3">
+                      <i class="fa fa-tasks fa-5x"></i>
+                  </div>
+                  <div class="col-xs-9 text-right">
+                      <div class="huge"><%= @total_questions %></div>
+                      <div>Total de questões do sistema!</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
