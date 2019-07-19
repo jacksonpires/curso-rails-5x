@@ -10,7 +10,7 @@ class ApplicationController < ActionController::Base
     end
 
     def check_pagination
-      unless user_signed_in?
+      unless user_signed_in? or admin_signed_in?
         params.extract!(:page)
       end
     end
