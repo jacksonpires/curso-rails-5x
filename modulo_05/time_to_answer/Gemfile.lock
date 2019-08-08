@@ -236,6 +236,8 @@ GEM
     thor (0.20.0)
     thread_safe (0.3.6)
     tilt (2.0.8)
+    trix (0.10.1)
+      rails
     ttfunk (1.5.1)
     tty-cursor (0.6.0)
     tty-spinner (0.8.0)
@@ -287,6 +289,7 @@ DEPENDENCIES
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3
+  trix
   tty-spinner
   tzinfo-data
   uglifier (>= 1.3.0)

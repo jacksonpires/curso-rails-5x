@@ -23,7 +23,7 @@
           <% @questions.each do |question| %>
           <tr>
               <td><%= question.id %></td>
-              <td><%= question.description.truncate(50) %></td>
+              <td><%= sanitize question.description.truncate(50) %></td>
               <td><%= question.subject.description.truncate(30) %></td>
               <td style="width: 100px">
 
