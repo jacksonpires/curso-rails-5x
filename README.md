@@ -6,4 +6,4 @@ Aqui ficará o conteúdo usado no curso.
 
 Deseja adquirir o curso? Acesse o link abaixo e saiba como.
 
->> [Ruby on Rails - Do início ao fim!](http://bit.ly/curso-rails-5x)
+>> [Ruby on Rails - Do início ao fim!](https://www.udemy.com/course/rubyonrails-5x/?referralCode=5CDC4A6332959AB91860)
